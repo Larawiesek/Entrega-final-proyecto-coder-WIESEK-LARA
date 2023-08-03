@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate - Milky Way</title>
+    <link href="estilos.css" rel="stylesheet">
+    <link rel="icon" href="img/ojo-negro-02.svg">
+</head>
+
+<body>
+
+       <header>
+      <div>
+        <img src="img/milkyway-header.png" alt="Logo Milky Way" class="logo-milky">
+      </div>
+
+      <form action="">
+        <input type="search" placeholder="Buscar..." class="buscar">
+        <input type="submit" value="Enviar" class="enviar">
+      </form>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="registrate.html">Registrate</a></li>
+        <li></li>
+      </ul>
+    </nav>
+    </header>
+    
+      <main>
+       
+        <article>
+           <h1>Regístrate</h1>
+        </article>
+       
+        <article class="registrate">
+      
+            <form action="perfil.html" method="get" class="formulario-registrate">
+
+              <input class="inputgeneral" name="nombre" autofocus required type="text" />
+              <label class="centrolabel" for ="nombre">Nombre y apellido</label>
+
+              <input class="inputgeneral" name="nombreusuario" minlength="7" maxlength="14" required type="text">
+              <label class="centrolabel" for ="nombreusuario">Nombre de usuario</label>
+
+              <input class="inputgeneral" name="email" required type="email" />
+              <label class="centrolabel" for ="email">Email</label>
+
+              <input class="inputgeneral" name="contraseña" required type="password" />
+              <label class="centrolabel" for ="contraseña">Contraseña</label>
+
+              <input class="inputgeneral" name="telefono" required type="tel" />
+              <label class="centrolabel" for ="telefono">Teléfono</label>
+
+              <input class="inputgeneral" name="fechanac" max="2010-01-01" type="date" />
+              <label class="centrolabel" for ="fechanac">Fecha de nacimiento</label>
+
+              <input class="inputgeneral" name="localidad" required type="text" list="localidad">
+              <datalist id="localidad">
+                <option value="Almagro"></option>
+                <option value="Belgrano"></option>
+                <option value="Caballito"></option>
+                <option value="Flores"></option>
+                <option value="Palermo"></option>
+              </datalist>
+              <label class="centrolabel" for ="localidad">Localidad</label>
+
+              <div id="divacepto">
+                <input name="acepto" required type="checkbox" value="acepto" checked id="acepto">
+                <label for="acepto">Acepto los términos y condiciones</label>
+              </div>
+              <input id="form-button" type="submit" value="Enviar Datos">
+            </form>
+    
+            <div class="cuadradado">
+              
+              <div id="cuadrado">
+              <h5 id="textocuadrado">Tenemos para ofrecerte</h5>
+              <div class="ofrecer">
+                  <div id="cafe">
+                      <a href="menu.html"><h2 class="textoblanco">café</h2></a>
+                  </div>
+                  <div id="capsulas">
+                      <a href="productomerch.html"><h2 class="textoblanco">cápsulas</h2></a>
+                  </div>
+              </div>
+              <div class="ofrecer">
+                  <div id="merch">
+                      <a href="merchandising.html"><h2 class="textoblanco">merch</h2></a>
+                  </div>
+                  <div id="ilustraciones">
+                      <a href="ilustradores.html"><h2 class="textoblanco">ilustraciones</h2></a>
+                  </div>
+              </div>
+          </div>
+
+            </div>
+            
+        </article>
+      </main>
+
+      <footer class="contenedor">
+  
+        <div>
+              <h3>Contacto</h3>
+                <ul class="footerul">
+                    <li>1122-3344</li>
+                    <li>milkyway@gmail.com</li>
+                    <li>Franklin 2970, Caballito</li>
+                </ul>
+            </div>
+        
+      
+        <div>
+            <h3>Redes Sociales</h3>
+            <ul class="redes-sociales">
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>TikTok</li>
+            </ul>
+        </div>
+      
+        <div>
+          <h3>¡Suscribite a nuestras novedades!</h3>
+          <form action="">
+            <input type="email" placeholder="mail@ejemplo.com" class="buscar">
+            <input type="submit" value="Suscribirme" class="enviar">
+          </form>
+        </div>
+      </footer>
+
+</body>
+</html>
