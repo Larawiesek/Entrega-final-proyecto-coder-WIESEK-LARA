@@ -298,6 +298,14 @@ p.texto-tablet{
     display: none;
 }
 
+.colaboraciones {
+    display: flex;
+    margin: 20px 0;
+    width: 355px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    }
 
 h2 {
     margin-bottom: 15px;
@@ -439,11 +447,7 @@ h2 {
     margin-top: 10px;
 }
 
-h4 {
-    font-size: 12pt;
-    font-weight: 400;
-    width: auto;
-}
+
 
 h5 {
     font-size: 8pt;
@@ -456,14 +460,6 @@ div {
 }
 
 
-.colaboraciones {
-    display: flex;
-    margin: 20px 0;
-    width: 355px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
 
 .creadores-img {
     width: 65px;
@@ -613,11 +609,161 @@ article .cuadrado{
 
 
     }
-
-   
     
 }
 
+
+/* === CARRITO === */
+
+
+.compras {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EFDAEB;
+    margin: 10% 0%;
+    width: 95%;
+    padding: 5%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.img-carrito {
+    width: 50%;
+    size: cover;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.qty {
+    width: 70%;
+    height: auto;
+}
+
+.sumarrestar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+}
+
+.qty .count {
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    font-weight: 600;
+    padding: 0 2px;
+    min-width: 35px;
+    text-align: center;
+    border-radius: 40%;
+}
+
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 27px;
+    height: 27px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #341F59
+    }
+
+
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 27px;
+    height: 27px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+    background-color: #341F59
+}
+
+.datos-botones-carrito {
+    width: 50%;
+    height: 50%;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.basura {
+    width: 150px;
+    height: auto;
+}
+
+#finalizar-compra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    height: 40px;
+    width: 315px;
+    background-color: #EFDAEB;
+    border-radius: 40px;
+    padding-right: 15px;
+}
+
+#finalizar-compra-palabra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #341F59;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 40px;
+}
+
+.img-inter {
+    height: 30px;
+    width: auto;
+    size: cover;
+}
+
+@media (min-width: 768px ){
+
+    .compras {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #EFDAEB;
+        margin: 5%;
+        width: 40%;
+        padding: 2%;
+        border-radius: 10%;
+    }
+
+
+    #finalizar-compra {
+        height: 20%;
+        width: 50%;
+    }
+    
+    #finalizar-compra-palabra {
+
+        width: 50%;
+    }
+
+}
 
 p {
     width: auto;
@@ -654,10 +800,7 @@ p {
     margin-bottom: 10px;
 }
 
-.intensidad {
-    width: 60px;
-    align-self: center;
-}
+
 
 .menu-desc {
     text-align: center;
@@ -677,60 +820,10 @@ p {
     font-size: 15pt;
 }
 
-#carrito {
-    background:linear-gradient(
-        rgba(255, 255, 255, 0.5), 
-        rgba(255, 255, 255, 0.5)
-      ),url(img/fondo-micarrito.png);
-    background-repeat: no-repeat;
-    background-size: 375px 1500px;
-}
 
-.compras {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #EFDAEB;
-    margin: 20px 0 20px 0px;
-    width: 95%;
-    padding: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
 
-.datos-botones-carrito {
-    width: 150px;
-    height: 85px;
-}
 
-.datos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.img-carrito {
-    height: 167px;
-    width: auto;
-    size: cover;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.basura {
-    width: 150px;
-    height: auto;
-}
-
-.img-inter {
-    height: 30px;
-    width: auto;
-    size: cover;
-}
 
 
 
@@ -789,15 +882,7 @@ p {
     margin: 60px;
 }
 
-#promo-ilus {
-    padding: 30px 15px;
-    background:  linear-gradient(
-        rgba(255, 255, 255, 0.5), 
-        rgba(255, 255, 255, 0.5)
-      ),url("img/fondoilustransparencia.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 input[type="number"] {
     -webkit-appearance: textfield;
@@ -861,10 +946,6 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 30px;
 }
 
-#nav{
-    display:flex
-    
-}
 
 .cajas {
  background-color: aquamarine;
@@ -872,17 +953,6 @@ input[type=number]::-webkit-outer-spin-button {
  height: 3em;
 }
 
-#boton-mas {
-    display: block;
-    margin-left: 10px;
-    padding: 0;
-    width: 60px;
-    background-color: #734A91;
-    border-radius: 15px;
-    color: white;
-    font-size: 26pt;
-    text-align: center;
-}
 
 .iconofoto{
     height: 80px;
@@ -892,43 +962,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-.perfil {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.titulosperfil {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 18pt;
-    font-weight: 900;
-    color:black;
-    margin-bottom: 20px;
-}
 
-.middle {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
-.side {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 16px;
-    margin-right: 16px;
-}
 
 #isotipomedio {
     height: 95px;
@@ -940,54 +976,15 @@ input[type=number]::-webkit-outer-spin-button {
     color: black;
 }
 
-#perfilicono {
-    position: relative;
-    height: 150px;
-    margin-top: -20px;
-}
-
-#fotoperfil {
-    height: 150px;
-    width: auto;
-    border-radius: 100px;
-    position: absolute;
-    top: 0px;
-    left: 110px;
-}
-
-#lapiz {
-    height: 40px;
-    width: auto;
-    position: absolute;
-    z-index: 200;
-    left: 190px;
-    top: 105px;
-    background-color: white;
-    border-radius: 25px;
-}
 
 
 
-.imgilust {
-    width: 168px;
-    height: 118px;
-    padding-right: 7px;
-}
 
-.susdisenos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    align-items: center;
-}
 
-.disenoimg {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: space-between;
-}
+
+
+
+
 
 .img-full {
     display: flex;
@@ -995,28 +992,10 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 13px;
 }
 
-.pilustradores {
-    font-size: 11pt;
-    text-align: center;
-    margin: 15px 5px 0px 5px;
-}
 
-.artsinpadding {
-    padding-left: 0px;
-}
 
-.lineavioleta {
-    background-color: #734A91;
-    width: 118px;
-    height: 2px;
-    margin-left: 15px;
-    margin-bottom: 15px; 
-}
 
-.textconpadding {
-    padding-left: 15px;
-    margin-bottom: 2px;
-}
+
 
 .nueshis {
     text-align: center;
@@ -1089,15 +1068,8 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
 }
 
-.icedmatchalatte {
-    color: black;
-}
 
-.linealila {
-    background-color: #734A91;
-    width: 300px;
-    height: 2px;
-}
+
 
 .muchomas {
     margin-bottom: 15px;
@@ -1193,84 +1165,12 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 5px;
 }
 
-#main-productomerch {
-    padding: 0 10px;
-}
 
-#flechita {
-    border-radius: 8px;
-    padding: 8px;
-    margin: 0 10px 0 5px;
-    width: 25px;
-    height: 25px;
-    background-color: #341F59;
-}
 
-.flechita-div {
-    width: 30px;
-}
 
-.recorrido {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-top: 15px;
-}
 
-#circulo-cafe {
-    width: 347px;
-    height: 347px;
-    border-radius: 200px;
-    background-color: #D7B4D1;
-    margin: 5px;
-}
 
-#img-latte {
-    width: auto;
-    height: auto;
-    margin-left: 60px;
-    margin-top: 35px;
-}
-#matcha {
-   width: 26px;
-   height: 22px;
-}
 
-#cafe-unico {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin-top: 30px;
-    padding-right: 10px;
-    align-items: center;
-    width: 355px
-}
-
-#cuadro-lila {
-    background-color: #EFDAEB;
-    width: 375px;
-    border-start-start-radius: 70px ;
-    border-start-end-radius: 70px ;
-    padding: 30px;
-}
-.iconos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 6px;
-}
-.iconitos {
-    width: 50px;
-    height: 49px;
-}
-
-#te-matcha {
-    font-size: 14pt;
-    margin: 20px 10px 10px 10px;
-    text-align: center;
-}
 hr {
     width: 300px;
     height: 3px;
@@ -1278,162 +1178,9 @@ hr {
     margin: 0px;
 }
 
-.vasos {
-    width: 39px;
-    height: auto;
-}
-.opciones {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-}
 
-.opciones2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-right: 40px;
-    margin-left: 95px;
-    margin-bottom: 20px;
-    align-items: center;
-}
 
-#img-prod-merch {
-    width: 345px;
-    height: 345px;
-    margin: 5px;
-    border-radius: 30px;
-}
 
-.links-recorrido {
-    margin-left: 25px;
-    text-decoration: none;
-}
-
-#links-recorrido {
-    color: black;
-}
-
-#intensidad-fuerte {
-    height: 40px;
-    width: auto;
-    margin: 10px 0;
-}
-
-#estrellas-valoracion {
-    height: 10px;
-    width: auto;
-}
-
-#cuadro-lila-merch {
-    background-color: #EFDAEB;
-    width: 355px;
-    border-radius: 30px;
-    padding: 25px;
-}
-
-#medioradio-lila-merch {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #EFDAEB;
-    margin-top: 20px;
-    margin-right: 0px;
-    width: 365px;
-    padding: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-#titulo-producto-merch {
-    width: 200px;
-}
-
-#titulo-producto-valoracion {
-    width: 50px;
-}
-
-#titulo-valoracion {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-}
-
-#caja-blanca-precio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-#main-perfil {
-    padding: 20px;
-}
-
-.fondoperfil {
-    width: 375px;
-    height: auto;
-}
-
-#formperfil1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.perfilinput {
-    width: 165px;
-    margin-bottom: 20px;
-    outline: 0;
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.costadolabel {
-    width: 165px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    display: flex;
-    justify-content: flex-start;
-    color: #734A91;
-    font-weight: 900;
-}
-
-#registrateredes {
-    width: 200px;
-    margin-left: 87px;
-    margin-bottom: 40px;
-}
-
-#redes {
-    display: flex;
-    justify-content: center;
-}
-
-#cerrarsesion {
-    margin: 30px 0px 0px 190px;
-    padding: 10px 15px;
-    width: 100px;
-    background-color: #341F59;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-}
 
 .radio-form {
     display: block;
@@ -1443,112 +1190,10 @@ hr {
     margin-bottom: 20px;
 }
 
-#main-mh {
-    position: relative;
-}
-
-#menu-hamburguesa-desplegado {
-    position: fixed;
-    z-index: 500;
-    background-color: white;
-    padding-left: 20px;
-    filter: drop-shadow(-10px 15px 10px rgba(0, 0, 0, 0.2));
-    width: 356px;
-}
-
-.menu-lista {
-    margin: 15px 0;
-    color: black;
-}
-
-.qty {
-    width: 112px;
-    height: auto;
-}
-
-.sumarrestar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-top: 13px;
-}
-
-.qty .count {
-    color: #ffffff;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 27px;
-    padding: 0 2px;
-    min-width: 35px;
-    text-align: center;
-    border-radius: 40%;
-}
-.qty .plus {
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    width: 27px;
-    height: 27px;
-    font: 30px/1 Arial,sans-serif;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #341F59
-    }
-.qty .minus {
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    width: 27px;
-    height: 27px;
-    font: 30px/1 Arial,sans-serif;
-    text-align: center;
-    border-radius: 50%;
-    background-clip: padding-box;
-    background-color: #341F59
-}
 
 
-input:disabled{
-    background-color: #341F59;
-}
 
-#finalizar-compra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 15px;
-    height: 40px;
-    width: 315px;
-    background-color: #EFDAEB;
-    border-radius: 40px;
-    padding-right: 15px;
-}
 
-#finalizar-compra-palabra {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #341F59;
-    color: white;
-    height: 40px;
-    width: 150px;
-    border-radius: 40px;
-}
 
-.iconos-perfil {
-    width: 30px;
-}
 
-.lista-perfil {
-    display: flex;
-    flex-direction: row;
-    column-gap: 40px;
-    padding: 15px 30px;
-    align-items: center;
-}
+
