@@ -49,7 +49,7 @@ header li{
     text-align: center;
 }
 
-form{
+.header__formulario{
     display: none;
 }
 
@@ -68,7 +68,7 @@ form{
         grid-template-rows: 80% 35%;
     }
 
-    form{
+.header__formulario{
         display: flex;
         align-items: center;
         justify-content: end;
@@ -217,6 +217,11 @@ footer.contenedor{
 }
 }
 
+.main__foto{
+    width: 60%;
+    margin: 0% 3%;
+}
+
 /* ==== FIN FOOTER ==== */
 
 
@@ -307,7 +312,7 @@ h2 {
     background:  linear-gradient(
         rgba(255, 255, 255, 0.5), 
         rgba(255, 255, 255, 0.5)
-      ),url("img/recurso3menu.png");
+        ),url("img/recurso3menu.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -451,9 +456,6 @@ div {
 }
 
 
-
-
-
 .colaboraciones {
     display: flex;
     margin: 20px 0;
@@ -472,6 +474,16 @@ div {
 
 
 /* === MENU DE CAFETERIA */
+
+.menu__buscador {
+    display: flex;
+    margin: 7% 15%;
+    width: 75%;
+    background-color:#EFDAEB;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px #734A91;
+}
 
 .contenido { 
     display: flex;
@@ -504,6 +516,11 @@ div {
     border-radius: 5%;
 }
 
+.menu__productosdestacados{
+    display: flex;
+    flex-direction: column;
+}
+
 .bebida-circulo {
     width: 150px;
     height: 150px;
@@ -522,8 +539,46 @@ div {
     padding-top: 13px;
 }
 
+.menu__switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color:#D7B4D1;
+    border-radius: 23px;
+    padding: 2px 4px;
+    margin: 50px 0 30px 76px;
+}
+
+#bebidas {
+    background-color:#341F59;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 23px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#comidas {
+    margin: 10px 10px 10px 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
 @media (min-width: 768px){
 
+    .menu__titulo{
+        display: flex;
+    }
+
+    .menu__buscador{
+        margin: 7% 30%;
+        width: 80%;
+    }
+    
 }
 
 /* === REGISTRATE === */
@@ -569,15 +624,6 @@ p {
     font-size: 10pt;
 }
 
-#buscador {
-    display: flex;
-    margin: 20px 62px;
-    width: 250px;
-    background-color:#EFDAEB;
-    padding: 5px;
-    border-radius: 10px;
-    border: solid 1px #734A91;
-}
 
 .subt-centro {
     text-align: center;
@@ -621,34 +667,7 @@ p {
     margin-top: 10px;
 }
 
-#bebidas-comidas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    background-color:#D7B4D1;
-    border-radius: 23px;
-    padding: 2px 4px;
-    margin: 50px 0 30px 76px;
-}
 
-#bebidas {
-    background-color:#341F59;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 23px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-#comidas {
-    margin: 10px 10px 10px 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: white;
-}
 
 .h3-menu {
     width: auto;
