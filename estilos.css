@@ -30,7 +30,7 @@ header {
     z-index: 1000;
 }
 
-nav ul{
+.header__nav--ul{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +53,7 @@ form{
     display: none;
 }
 
-.logo-milky{
+.header__logo{
     max-width: 100%;
     align-items: center;
     justify-content: center;
@@ -84,19 +84,19 @@ form{
         gap: 0.5rem;
     }
 
-    .enviar{
+    .header__form--enviar{
         color:#734A91;
         font-size: 1rem;
         border-color: #734A91;
 
     }
 
-    .buscar{
+    .header__form--buscar{
         border-bottom: 1px solid darkslateblue;
     }
 
 
-    header nav{
+    .header__nav{
         grid-column: span 2;
     }
 
@@ -106,7 +106,7 @@ form{
     font-size: 1rem;
     }
 
-    header nav ul{
+    .header__nav--ul{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -148,7 +148,6 @@ footer {
     background-color: #EFDAEB;
 }
 
-
 h3 {
     width: auto;
     font-size: 1.3rem;
@@ -180,14 +179,14 @@ input{
     gap: 0.5rem;
 }
 
-.enviar{
+.footer__form--enviar{
     color:#734A91;
     font-size: 1rem;
     border-color: #734A91;
 
 }
 
-.buscar{
+.footer__form--buscar{
     border-bottom: 1px solid darkslateblue;
 }
 
@@ -213,7 +212,7 @@ footer.contenedor{
     align-items: center;
 }
 
-ul.redes-sociales{
+.footer__ul--redes{
     text-align: center;
 }
 }
